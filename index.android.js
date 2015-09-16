@@ -12,8 +12,6 @@ var configureStore = require('./src/store/configureStore');
 var {
   Component,
   AppRegistry,
-  Text,
-  View,
 } = React;
 
 var store = configureStore();

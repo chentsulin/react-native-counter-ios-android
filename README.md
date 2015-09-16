@@ -10,3 +10,29 @@ I don't use any syntax out of React Native's enabled transformations, so no any 
 - redux-thunk
 
 ![](demo.png)
+
+## How to run this Porject
+
+#### Setup iOS and Android env
+
+see
+
+- [iOS setup](https://facebook.github.io/react-native/docs/getting-started.html#ios-setup) 
+- [Android setup](https://facebook.github.io/react-native/docs/android-setup.html#content)
+
+#### Install npm dependecies
+
+```sh
+npm i
+```
+
+#### run iOS
+
+Open `ios/ReduxCounterUniversal.xcodeproj` and hit run in Xcode.
+
+#### run Android
+
+```sh
+emulator -avd [your_emulator_name] -gpu on &
+react-native run-android
+```

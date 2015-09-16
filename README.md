@@ -36,3 +36,6 @@ Open `ios/ReduxCounterUniversal.xcodeproj` and hit run in Xcode.
 emulator -avd [your_emulator_name] -gpu on &
 react-native run-android
 ```
+
+## License
+MIT © [C. T. Lin](https://github.com/chentsulin)

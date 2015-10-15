@@ -1,11 +1,11 @@
-var { createStore, applyMiddleware } = require('redux');
-var thunk = require('redux-thunk');
-var reducer = require('../reducers');
+import { createStore, applyMiddleware } from 'redux';
+import thunk from 'redux-thunk';
+import reducer from '../reducers';
 
-var createStoreWithMiddleware = applyMiddleware(
+const createStoreWithMiddleware = applyMiddleware(
   thunk
 )(createStore);
 
-module.exports = function configureStore(initialState) {
+export default function configureStore(initialState) {
   return createStoreWithMiddleware(reducer, initialState);
 };

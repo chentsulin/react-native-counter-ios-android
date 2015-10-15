@@ -1,8 +1,8 @@
-var { combineReducers } = require('redux');
-var counter = require('./counter');
+import { combineReducers } from 'redux';
+import counter from './counter';
 
-var rootReducer = combineReducers({
+const rootReducer = combineReducers({
   counter
 });
 
-module.exports = rootReducer;
+export default rootReducer;

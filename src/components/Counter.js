@@ -1,13 +1,11 @@
-var React = require('react-native');
-
-var {
+import React, {
   Component,
   PropTypes,
   StyleSheet,
   Text,
   View,
   TouchableHighlight,
-} = React;
+} from 'react-native';
 
 class Counter extends Component {
   render() {
@@ -40,7 +38,7 @@ Counter.propTypes = {
   counter: PropTypes.number.isRequired
 };
 
-var styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
@@ -54,4 +52,4 @@ var styles = StyleSheet.create({
   },
 });
 
-module.exports = Counter;
+export default Counter;

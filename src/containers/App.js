@@ -1,7 +1,7 @@
-var { bindActionCreators } = require('redux');
-var { connect } = require('react-redux/native');
-var Counter = require('../components/Counter');
-var CounterActions = require('../actions/counter');
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux/native';
+import Counter from '../components/Counter';
+import * as CounterActions from '../actions/counter';
 
 function mapStateToProps(state) {
   return {
@@ -13,4 +13,4 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators(CounterActions, dispatch);
 }
 
-module.exports = connect(mapStateToProps, mapDispatchToProps)(Counter);
+export default connect(mapStateToProps, mapDispatchToProps)(Counter);

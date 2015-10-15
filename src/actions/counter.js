@@ -1,21 +1,19 @@
-var actions = exports = module.exports;
+export const INCREMENT_COUNTER = 'INCREMENT_COUNTER';
+export const DECREMENT_COUNTER = 'DECREMENT_COUNTER';
 
-exports.INCREMENT_COUNTER = 'INCREMENT_COUNTER';
-exports.DECREMENT_COUNTER = 'DECREMENT_COUNTER';
-
-exports.increment = function increment() {
+export function increment() {
   return {
-    type: actions.INCREMENT_COUNTER
+    type: INCREMENT_COUNTER
   };
 };
 
-exports.decrement = function decrement() {
+export function decrement() {
   return {
-    type: actions.DECREMENT_COUNTER
+    type: DECREMENT_COUNTER
   };
 };
 
-exports.incrementIfOdd = function incrementIfOdd() {
+export function incrementIfOdd() {
   return (dispatch, getState) => {
     var { counter } = getState();
 
@@ -23,15 +21,15 @@ exports.incrementIfOdd = function incrementIfOdd() {
       return;
     }
 
-    dispatch(actions.increment());
+    dispatch(increment());
   };
 };
 
-exports.incrementAsync = function incrementAsync(delay) {
+export function incrementAsync(delay) {
   delay = delay || 1000;
   return dispatch => {
     setTimeout(() => {
-      dispatch(actions.increment());
+      dispatch(increment());
     }, delay);
   };
 };

@@ -4,17 +4,12 @@
  */
 'use strict';
 
-var React = require('react-native');
-var { Provider } = require('react-redux/native');
-var App = require('./src/containers/App');
-var configureStore = require('./src/store/configureStore');
+import React, { Component, AppRegistry } from 'react-native';
+import { Provider } from 'react-redux/native';
+import App from './src/containers/App';
+import configureStore from './src/store/configureStore';
 
-var {
-  Component,
-  AppRegistry,
-} = React;
-
-var store = configureStore();
+const store = configureStore();
 
 class ReduxCounterUniversal extends Component {
   render() {

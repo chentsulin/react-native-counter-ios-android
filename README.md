@@ -37,5 +37,13 @@ emulator -avd [your_emulator_name] -gpu on &
 react-native run-android
 ```
 
+> On Mac using `fn + F2` to open debug panel
+
+Also you can use `adb logcat` to log some android debug messages. 
+
+```sh
+adb logcat -s 'ReactNative' 
+```
+
 ## License
 MIT © [C. T. Lin](https://github.com/chentsulin)

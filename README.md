@@ -4,7 +4,7 @@
 
 I don't use any syntax out of React Native's enabled transformations, so no any patch on ReactNative is needed.
 
-- react-native v0.13
+- react-native v0.14
 - redux v3
 - react-redux v3
 - redux-thunk v1
@@ -17,7 +17,7 @@ I don't use any syntax out of React Native's enabled transformations, so no any 
 
 see
 
-- [iOS setup](https://facebook.github.io/react-native/docs/getting-started.html#ios-setup) 
+- [iOS setup](https://facebook.github.io/react-native/docs/getting-started.html#ios-setup)
 - [Android setup](https://facebook.github.io/react-native/docs/android-setup.html#content)
 
 #### Install npm dependecies
@@ -39,11 +39,15 @@ react-native run-android
 
 > On Mac using `fn + F2` to open debug panel
 
-Also you can use `adb logcat` to log some android debug messages. 
+Also you can use `adb logcat` to log some android debug messages.
 
 ```sh
-adb logcat -s 'ReactNative' 
+adb logcat -s 'ReactNative'
 ```
+
+## Upgrade Guide
+
+[React Native Upgrading](http://facebook.github.io/react-native/docs/upgrading.html)
 
 ## License
 MIT © [C. T. Lin](https://github.com/chentsulin)

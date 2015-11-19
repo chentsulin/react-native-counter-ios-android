@@ -6,7 +6,7 @@ I don't use any syntax out of React Native's enabled transformations, so no any 
 
 - react-native v0.14
 - redux v3
-- react-redux v3
+- react-redux v3 (stay on v3 until https://github.com/facebook/react-native/issues/2985 be closed)
 - redux-thunk v1
 
 ![](demo.png)

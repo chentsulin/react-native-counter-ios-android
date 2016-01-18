@@ -6,8 +6,9 @@ I don't use any syntax out of React Native's enabled transformations, so no any 
 
 - react-native v0.17
 - redux v3
-- react-redux v3 (stay on v3 until https://github.com/facebook/react-native/issues/2985 be closed)
+- react-redux v3 (stay on v3 until react-native 0.18 release)
 - redux-thunk v1
+- remote-redux-devtools v0.0.8
 
 ![](demo.png)
 
@@ -44,6 +45,12 @@ Also you can use `adb logcat` to log some android debug messages.
 ```sh
 adb logcat -s 'ReactNative'
 ```
+
+## Remote devtools
+
+[chrome app](https://chrome.google.com/webstore/detail/remotedev/faicmgpfiaijcedapokpbdejaodbelph) (recommended)
+
+See [remote-redux-devtools](https://github.com/zalmoxisus/remote-redux-devtools) for more information
 
 ## Upgrade Guide
 

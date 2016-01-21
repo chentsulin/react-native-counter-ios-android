@@ -5,7 +5,7 @@
 'use strict';
 
 import React, { Component, AppRegistry } from 'react-native';
-import { Provider } from 'react-redux/native';
+import { Provider } from 'react-redux';
 import App from './src/containers/App';
 import configureStore from './src/store/configureStore';
 
@@ -15,7 +15,7 @@ class ReduxCounterUniversal extends Component {
   render() {
     return (
       <Provider store={store}>
-        {() => <App />}
+        <App />
       </Provider>
     );
   }

@@ -4,11 +4,11 @@
 
 I don't use any syntax out of React Native's enabled transformations, so no any patch on ReactNative is needed.
 
-- react-native v0.18
+- react-native v0.19
 - redux v3
 - react-redux v4
 - redux-thunk v1
-- remote-redux-devtools v0.0.9
+- remote-redux-devtools v0.1
 
 ![](demo.png)
 

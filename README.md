@@ -4,7 +4,7 @@
 
 I don't use any syntax out of React Native's enabled transformations, so no any patch on ReactNative is needed.
 
-- react-native v0.19
+- react-native v0.20
 - redux v3
 - react-redux v4
 - redux-thunk v1

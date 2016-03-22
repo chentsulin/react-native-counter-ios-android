@@ -5,7 +5,7 @@ import reducer from '../reducers';
 
 
 export default function configureStore(initialState) {
-  return createStore(
+  const store = createStore(
     reducer,
     initialState,
     compose(
@@ -13,4 +13,14 @@ export default function configureStore(initialState) {
       devTools()
     )
   );
+
+  if (module.hot) {
+    // Enable hot module replacement for reducers
+    module.hot.accept(() => {
+      const nextRootReducer = require('../reducers/index').default;
+      store.replaceReducer(nextRootReducer);
+    });
+  }
+
+  return store;
 };

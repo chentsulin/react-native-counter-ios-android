@@ -4,10 +4,11 @@
 
 I don't use any syntax out of React Native's enabled transformations, so no any patch on ReactNative is needed.
 
-- react-native v0.21
+- react - v0.14
+- react-native v0.22 (Hot Module Replacement!!!)
 - redux v3
 - react-redux v4
-- redux-thunk v1
+- redux-thunk v2
 - remote-redux-devtools v0.1
 
 ![](demo.png)
@@ -61,12 +62,12 @@ See [remote-redux-devtools](https://github.com/zalmoxisus/remote-redux-devtools)
 #### Naming collision detected
 
 ```
-Failed to build DependencyGraph: 
-Naming collision detected: 
+Failed to build DependencyGraph:
+Naming collision detected:
 /Users/dbrowne/Sites/react-native-counter-ios-android/node_modules/remote-redux-devtools/node_modules/react/node_modules/fbjs/lib/warning.js collides with /Users/dbrowne/Sites/react-native-counter-ios-android/node_modules/react-native/node_modules/fbjs/lib/warning.js
 
-Error: 
-Naming collision detected: 
+Error:
+Naming collision detected:
 /Users/dbrowne/Sites/react-native-counter-ios-android/node_modules/remote-redux-devtools/node_modules/react/node_modules/fbjs/lib/warning.js collides with /Users/dbrowne/Sites/react-native-counter-ios-android/node_modules/react-native/node_modules/fbjs/lib/warning.js
 ```
 

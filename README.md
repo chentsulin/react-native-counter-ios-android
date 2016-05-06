@@ -5,11 +5,11 @@
 I don't use any syntax out of React Native's enabled transformations, so no any patch on ReactNative is needed.
 
 - react - v0.14
-- react-native v0.24 (Hot Module Replacement!!!)
+- react-native v0.25 (Hot Module Replacement!!!)
 - redux v3
 - react-redux v4
 - redux-thunk v2
-- remote-redux-devtools v0.2
+- remote-redux-devtools v0.3
 
 ![](demo.png)
 

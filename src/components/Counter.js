@@ -1,7 +1,8 @@
-import React from 'react';
-import {
+import React, {
   Component,
   PropTypes,
+} from 'react';
+import {
   StyleSheet,
   Text,
   View,

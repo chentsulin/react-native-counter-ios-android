@@ -33,3 +33,12 @@ export function incrementAsync(delay) {
     }, delay);
   };
 };
+
+export function decrementAsync(delay) {
+  delay = delay || 1000;
+  return dispatch => {
+    setTimeout(() => {
+      dispatch(decrement());
+    }, delay);
+  };
+};

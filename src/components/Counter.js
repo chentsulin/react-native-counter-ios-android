@@ -11,7 +11,7 @@ import {
 
 class Counter extends Component {
   render() {
-    var { increment, incrementIfOdd, incrementAsync, decrement, counter } = this.props;
+    var { increment, incrementIfOdd, incrementAsync, decrement, decrementAsync, counter } = this.props;
     return (
       <View style={styles.container}>
         <View style={styles.displayPanel}>
@@ -34,6 +34,10 @@ class Counter extends Component {
             onPress={() => incrementAsync()} style={styles.buttonAdd} underlayColor={colors.add.bg}>
             <Text style={[styles.text, styles.textColorAdd]}>Increment async</Text>
           </TouchableHighlight>
+          <TouchableHighlight
+            onPress={() => decrementAsync()} style={styles.buttonMinus} underlayColor={colors.minus.bg}>
+            <Text style={[styles.text, styles.textColorMinus]}>Decrement async</Text>
+          </TouchableHighlight>
         </View>
       </View>
     );
@@ -44,6 +48,7 @@ Counter.propTypes = {
   increment: PropTypes.func.isRequired,
   incrementIfOdd: PropTypes.func.isRequired,
   incrementAsync: PropTypes.func.isRequired,
+  decrementAsync: PropTypes.func.isRequired,
   decrement: PropTypes.func.isRequired,
   counter: PropTypes.number.isRequired
 };
@@ -133,6 +138,17 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     borderWidth: 2,
     borderColor: colors.add.border,
+    paddingLeft: 10,
+    paddingRight: 10
+  },
+  buttonMinus: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: 30,
+    margin: 10,
+    borderRadius: 10,
+    borderWidth: 2,
+    borderColor: colors.minus.border,
     paddingLeft: 10,
     paddingRight: 10
   }

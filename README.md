@@ -11,7 +11,7 @@ I don't use any syntax out of React Native's enabled transformations, so no any 
 - redux-thunk v2
 - remote-redux-devtools v0.3
 
-![](demo.png)
+![](https://cloud.githubusercontent.com/assets/8992046/15353674/c28f295e-1d1c-11e6-8168-5b17841e2b18.png)
 
 ## How to run this Porject
 
@@ -56,6 +56,12 @@ See [remote-redux-devtools](https://github.com/zalmoxisus/remote-redux-devtools)
 ## Upgrade Guide
 
 [React Native Upgrading](http://facebook.github.io/react-native/docs/upgrading.html)
+
+## Maintainers
+
+- [C. T. Lin](https://github.com/chentsulin)
+- [Chiara-yen](https://github.com/Chiara-yen)
+
 
 ## License
 MIT © [C. T. Lin](https://github.com/chentsulin)

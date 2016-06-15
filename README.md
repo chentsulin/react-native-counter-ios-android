@@ -4,8 +4,8 @@
 
 I don't use any syntax out of React Native's enabled transformations, so no any patch on ReactNative is needed.
 
-- react - v0.14
-- react-native v0.25 (Hot Module Replacement!!!)
+- react - v15
+- react-native v0.27 (Hot Module Replacement!!!)
 - redux v3
 - react-redux v4
 - redux-thunk v2
@@ -31,6 +31,13 @@ npm i
 #### run iOS
 
 Open `ios/ReduxCounterUniversal.xcodeproj` and hit run in Xcode.
+
+or
+
+```sh
+react-native run-ios
+```
+
 
 #### run Android
 

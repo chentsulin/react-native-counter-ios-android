@@ -6,11 +6,11 @@
     "start": "node_modules/react-native/packager/packager.sh"
   },
   "dependencies": {
-    "react": "^15.2.1",
-    "react-native": "^0.30.0",
+    "react": "^15.3.1",
+    "react-native": "^0.32.0",
     "react-redux": "^4.4.5",
     "redux": "^3.5.2",
     "redux-thunk": "^2.1.0",
-    "remote-redux-devtools": "^0.3.4"
+    "remote-redux-devtools": "^0.4.3"
   }
 }

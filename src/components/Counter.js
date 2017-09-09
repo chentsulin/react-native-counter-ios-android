@@ -1,6 +1,5 @@
 import React, {
   Component,
-  PropTypes,
 } from 'react';
 import {
   StyleSheet,
@@ -8,6 +7,7 @@ import {
   View,
   TouchableHighlight,
 } from 'react-native';
+import PropTypes from 'prop-types';
 
 class Counter extends Component {
   render() {
